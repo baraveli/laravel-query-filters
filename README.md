@@ -2,6 +2,12 @@
 
 A minimal approach to filtering eloquent models through query params
 
+## Installation
+
+```
+composer require baraveli/laravel-query-filters
+```
+
 ## Usage
 
 ### Create custom filter class in your laravel application
