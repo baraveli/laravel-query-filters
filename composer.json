@@ -6,7 +6,11 @@
         "name": "Mohamed jinas",
         "email": "j@live.mv"
     }],
-    "require": {},
+    "require": {
+          "laravel/framework": "^6.0|^7.0|^8.0",
+          "illuminate/database": "^6.0 || ^7.0 || ^8.0",
+          "illuminate/http": "^6.0 || ^7.0 || ^8.0"
+    },
     "autoload": {
         "psr-4": {
             "Baraveli\\QueryFilters\\": "src/"
