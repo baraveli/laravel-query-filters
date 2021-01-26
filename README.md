@@ -1,6 +1,6 @@
 # Laravel Query Filter
 
-Minimal approach to filtering eloquent models using query params
+A minimal approach to filtering eloquent models through query params
 
 ## Usage
 
