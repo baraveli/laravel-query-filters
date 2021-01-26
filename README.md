@@ -6,7 +6,7 @@ Minimal approach to filtering eloquent models using query params
 
 ### Create custom filter class in your laravel application
 
-In this case I have a filter for the user model. Every filter should extends the baravelu `QueryFilter` class.
+**In this case I have a filter for the user model. Every filter should extends the baraveli `QueryFilter` class.**
 
 ```php
 <?php
@@ -46,7 +46,7 @@ class UsersFilters extends QueryFilter
 
 ### Add filterable trait to your eloquent model
 
-Adding this trait will give you a `filter()` scope with in your laravel model that you can use to apply the previous query filter
+**Adding this trait will give you a `filter()` scope with in your laravel model that you can use to apply the previous query filter**
 
 ```php
 
@@ -66,3 +66,18 @@ class User extends Authenticatable
 }
 
 ```
+
+### Response 
+
+**Now with in your controller or route return and apply the filters**
+
+```php
+Route::get('users', function(UsersFilters $usersfilter){
+    return User::filter($usersfilter)->get();
+});
+```
+
+Now you will be able to use the query filters like so
+
+- /api/users?search=Ms : Search all the users names
+- /api/users?search=Ms&per_page=5 : Search all the users names and paginate the results
