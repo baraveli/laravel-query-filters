@@ -1,6 +1,6 @@
 {
     "name": "baraveli/laravel-query-filters",
-    "description": "Minimal approach to filtering eloquent models using query params",
+    "description": "A minimal approach to filtering eloquent models through query params",
     "license": "MIT",
     "authors": [{
         "name": "Mohamed jinas",
