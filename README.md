@@ -6,7 +6,8 @@ Minimal approach to filtering eloquent models using query params
 
 ### Create custom filter class in your laravel application
 
-**In this case I have a filter for the user model. Every filter should extends the baraveli `QueryFilter` class.**
+**In this case I have a filter for the user model. Every filter should extends the baraveli `QueryFilter` class.
+And the method name in each filter class correspond to the url param name so in this case when you call ?search="ssd" it is actually calling the `search()` method**
 
 ```php
 <?php
